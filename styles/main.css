@@ -1,0 +1,417 @@
+/* ------------------Обнуление стилей---------------------*/
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+/*----------------- Переменные----------------------------*/
+
+:root {
+    /* Шрифты*/
+    --main-font: 'Roboto';
+    --supportive-font: 'Raleway';
+
+    /*Цвета*/
+    --white-background-clr: #FFFFFF;
+    --darkgrey-background-clr: #2F303A;
+    --light-background-clr: #f5f4fa;
+    --btn-hover: #01213c;
+    --foot-context: rgba(255, 255, 255, 0.6);
+    --white-clr: #FFFFFF;
+    --pargraf-clr: #757575;
+    --logo-second-clr: #000000;
+    --clr-txt-main: #212121;
+    --clr-txt-support: #2196F3;
+    --slider-backgr: #EEEEEE;
+
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    font-family: var(--main-font), "Tahoma", sans-serif;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    color: #212121;
+    color: var(--clr-txt-main);
+
+}
+
+/* ---------------- Section №1 "effect" ----------------------*/
+/* Header*/
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    background-color: var(--white-background-clr);
+    padding: 0 215px 0 215px;
+}
+
+.header__logo {
+    cursor: pointer;
+    padding-bottom: 30px;
+}
+
+.logo__text {
+    color: var(--clr-txt-support);
+    font-family: var(--supportive-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.logo__text>span {
+    color: var(--logo-second-clr);
+}
+
+.nav__contact,
+.nav__list {
+    display: flex;
+}
+
+.list__link {
+    color: var(--clr-txt-main);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-left: 50px;
+}
+
+.list__link:hover {
+    color: var(--clr-txt-support);
+}
+
+.mail {
+    margin-left: 290px;
+}
+
+.link-phone {
+    color: var(--pargraf-clr);
+}
+
+/* ----------------- Section №2 "description" -------------------*/
+.effect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    background-color: var(--darkgrey-background-clr);
+}
+
+.effect>h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-clr);
+}
+
+.effect__button {
+    margin-top: 30px;
+    padding: 10px 27px 10px 30px;
+    background-color: var(--clr-txt-support);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.035em;
+    color: var(--white-clr);
+    width: 200px;
+    height: 50px;
+}
+
+.effect__button:hover {
+    background-color: var(--white-background-clr);
+    color: var(--btn-hover);
+    transition: 1s;
+}
+
+/* --------------Section №3 "description" -----------------*/
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 93px 215px 0px 216px;
+}
+
+.wrapper-text {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.wrapper-text__item {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+}
+
+.text-content__main {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+}
+
+.wrapper-text__item>p {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--pargraf-clr);
+}
+
+/* Section 4*/
+
+.doing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 215px 92px 215px;
+}
+
+.question {
+    margin: 96px 0px 50px 2px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.qs-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* ------------Section №4 "team" ------------------*/
+
+.team {
+    display: flex;
+    flex-direction: column;
+    padding: 0 215px 94px 215px;
+    background-color: var(--light-background-clr);
+    width: 100%;
+}
+
+.qs-box__item {
+    width: 270px;
+    height: 368px;
+    border-radius: 5px;
+    background-color: var(--white-background-clr);
+    box-shadow: -1px 2px rgb(185, 184, 184);
+}
+
+.qs-box__txh2 {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+
+.qs-box__txp {
+    margin-top: 19px;
+    font-size: 16px;
+    line-height: 1.19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--pargraf-clr);
+}
+
+/* footer*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 61px 0 10px 216px;
+    background-color: var(--darkgrey-background-clr);
+    height: 252px;
+    width: 100%;
+}
+
+.flogo>span {
+    color: var(--white-clr);
+}
+
+.address {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-clr);
+}
+
+.address:hover {
+    color: var(--clr-txt-support);
+}
+
+
+address {
+    all: initial
+}
+
+.header__logo {
+    height: 28%;
+}
+
+.cnt {
+    display: block;
+    margin-top: 6px;
+    color: var(--foot-context);
+}
+
+.cnt:hover {
+    color: var(--clr-txt-support);
+}
+
+/*###################################  PARTFOLIO.HTML ################################*/
+
+/* ------------ filter ----------------*/
+.filter {
+    border-top: 1px solid rgba(128, 128, 128, 0.247);
+    padding: 93px 496px 0 496px;
+}
+
+.filter__btn {
+    padding: 7px 20px 7px 20px;
+    background-color: var(--light-background-clr);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--clr-txt-main);
+
+}
+
+.filter__btn:hover {
+    background-color: var(--clr-txt-support);
+    color: var(--light-background-clr);
+    transition: 1s;
+}
+
+/* ------------gallery ----------------*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 47px 215px;
+    margin-bottom: 21px;
+}
+
+.gallery__wrapper {
+    border: 1px solid rgba(128, 128, 128, 0.158);
+    flex: 0 0 33.3%;                    
+    height: 50px;
+    margin-bottom: 29px;
+    background-color: var(--white-background-clr);
+    max-width: 370px;
+    height: 404px;
+}
+
+.card__maintxt {
+    margin: 21px 0 0 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--clr-txt-main);
+}
+
+.card__txt {
+    margin: 4px 0 0 23.5px;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--pargraf-clr);
+}
+
+
+/* ################################## STUDIO #####################################*/
+.studio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 62vh;
+    background-image: url("../images/studio/studio-01.jpg");
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    background-position: center;
+}
