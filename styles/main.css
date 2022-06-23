@@ -90,25 +90,24 @@ body {
 /* ---------------- Section №1 "effect" ----------------------*/
 /* Header*/
 .container {
-    max-width: 1600px;
+    width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
     width: 100%;
+    padding: 24px 0 25px 0;
     background-color: var(--white-background-clr);
-    padding: 0 215px 0 215px;
+
 }
 
 .header__logo {
+    display: flex;
     cursor: pointer;
-    padding-bottom: 30px;
+    margin-left: 15px;
+
 }
 
 .logo__text {
@@ -124,9 +123,11 @@ body {
     color: var(--logo-second-clr);
 }
 
+.header__wrap,
 .nav__contact,
 .nav__list {
     display: flex;
+    align-items: center;
 }
 
 .list__link {
@@ -143,11 +144,16 @@ body {
 }
 
 .mail {
-    margin-left: 290px;
+    color: var(--pargraf-clr);
 }
 
 .link-phone {
     color: var(--pargraf-clr);
+    margin-right: 15px;
+}
+
+.cont {
+    margin-right: 239px;
 }
 
 /* ----------------- Section №2 "description" -------------------*/
@@ -199,7 +205,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 93px 215px 0px 216px;
+    padding: 93px 15px 0px 15px;
 }
 
 .wrapper-text {
@@ -237,7 +243,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 215px 92px 215px;
+    padding: 0px 15px 92px 15px;
 }
 
 .question {
@@ -258,17 +264,20 @@ body {
 /* ------------Section №4 "team" ------------------*/
 
 .team {
-    display: flex;
-    flex-direction: column;
-    padding: 0 215px 94px 215px;
+    padding-bottom: 94px;
     background-color: var(--light-background-clr);
     width: 100%;
+}
+
+.team__wrapper {
+    flex-direction: column;
+    padding: 0 15px;
 }
 
 .qs-box__item {
     width: 270px;
     height: 368px;
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
     background-color: var(--white-background-clr);
     box-shadow: -1px 2px rgb(185, 184, 184);
 }
@@ -294,13 +303,17 @@ body {
 
 /* footer*/
 .footer {
+    background-color: var(--darkgrey-background-clr);
+    width: 100%;
+    padding-bottom: 45px;
+
+}
+
+.footer__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 61px 0 10px 216px;
-    background-color: var(--darkgrey-background-clr);
-    height: 252px;
-    width: 100%;
+    padding: 61px 0 10px 0px;
 }
 
 .flogo>span {
@@ -309,6 +322,7 @@ body {
 
 .address {
     font-family: var(--main-font);
+    margin-left: 15px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -321,7 +335,8 @@ body {
 
 
 address {
-    all: initial
+    all: initial;
+    padding-top: 21px;
 }
 
 .header__logo {
@@ -341,12 +356,22 @@ address {
 /*###################################  PARTFOLIO.HTML ################################*/
 
 /* ------------ filter ----------------*/
+.separate {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.247);
+}
+
+
 .filter {
-    border-top: 1px solid rgba(128, 128, 128, 0.247);
-    padding: 93px 496px 0 496px;
+    display: flex;
+    justify-content: center;
+}
+.filter>li {
+    flex: 1 1 1 auto;
+    margin: 0 5px;
 }
 
 .filter__btn {
+    margin-top: 92px;
     padding: 7px 20px 7px 20px;
     background-color: var(--light-background-clr);
     border-radius: 4px;
@@ -372,15 +397,15 @@ address {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 47px 215px;
+    padding: 48px 15px 44px 15px;
     margin-bottom: 21px;
 }
 
 .gallery__wrapper {
     border: 1px solid rgba(128, 128, 128, 0.158);
-    flex: 0 0 33.3%;                    
+    flex: 0 0 33.3%;
     height: 50px;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
     background-color: var(--white-background-clr);
     max-width: 370px;
     height: 404px;
@@ -401,17 +426,4 @@ address {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--pargraf-clr);
-}
-
-
-/* ################################## STUDIO #####################################*/
-.studio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 62vh;
-    background-image: url("../images/studio/studio-01.jpg");
-    background-color: rgb(0, 0, 0);
-    background-size: cover;
-    background-position: center;
 }
