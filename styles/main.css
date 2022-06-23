@@ -72,7 +72,7 @@ img {
     --clr-txt-main: #212121;
     --clr-txt-support: #2196F3;
     --slider-backgr: #EEEEEE;
-    --border-color-solid:rgba(128, 128, 128, 0.247);
+    --border-color-solid: rgba(128, 128, 128, 0.247);
 
 }
 
@@ -92,6 +92,7 @@ body {
 /* Header*/
 .container {
     width: 1200px;
+    padding: 0 15px 0 15px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -101,14 +102,11 @@ body {
     width: 100%;
     padding: 24px 0 25px 0;
     background-color: var(--white-background-clr);
-
 }
 
 .header__logo {
     display: flex;
     cursor: pointer;
-    margin-left: 15px;
-
 }
 
 .logo__text {
@@ -150,7 +148,6 @@ body {
 
 .link-phone {
     color: var(--pargraf-clr);
-    margin-right: 15px;
 }
 
 .cont {
@@ -247,7 +244,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 15px 92px 15px;
+    padding-bottom: 92px;
 }
 
 .question {
@@ -274,7 +271,6 @@ body {
 
 .team__wrapper {
     flex-direction: column;
-    padding: 0 15px;
 }
 
 .qs-box__item {
@@ -316,7 +312,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 61px 0 10px 0px;
+    padding-top: 61px;
+    padding-bottom: 10px;
 }
 
 .flogo>span {
@@ -325,7 +322,6 @@ body {
 
 .address {
     font-family: var(--main-font);
-    margin-left: 15px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -360,7 +356,7 @@ address {
 
 /* ------------ filter ----------------*/
 .separate {
-    border-bottom: var(--border-color-solid);
+    border-bottom: 1px solid var(--border-color-solid);
 }
 
 .filter {
@@ -400,7 +396,9 @@ address {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 48px 15px 44px 15px;
+    padding-top: 48px;
+    padding-bottom: 44px;
+
     margin-bottom: 21px;
 }
 
@@ -411,9 +409,10 @@ address {
     background-color: var(--white-background-clr);
     max-width: 370px;
     height: 404px;
-    position:relative;
+    position: relative;
     border-bottom: 1px solid var(--border-color-solid);
 }
+
 .gallery__wrapper ::after {
     content: '';
     position: absolute;
@@ -423,6 +422,7 @@ address {
     height: 110px;
     background-color: rgba(128, 128, 128, 0.103);
 }
+
 .gallery__wrapper ::before {
     content: '';
     position: absolute;
@@ -430,8 +430,9 @@ address {
     left: 369px;
     width: 0.7px;
     height: 110px;
-    background-color: rgba(128, 128, 128, 0.103);;
-}  
+    background-color: rgba(128, 128, 128, 0.103);
+    ;
+}
 
 
 .card__maintxt {
