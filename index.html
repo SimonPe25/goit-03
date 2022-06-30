@@ -17,20 +17,21 @@
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header__wrapper">
             <a class="header__logo logo">
                 <p class="logo__text">Web<span>Studio</span></p>
             </a>
             <nav class="header__wrap">
-                <ul class="nav__list list">
-                    <li><a href="#" title="studio" class="list__link">Студия</a></li>
-                    <li><a href="./partfolio.html" title="partfolio" class="list__link">Портфолио</a></li>
-                    <li><a href="#adress" class="list__link cont">Контакты</a></li>
+                <ul class="nav__list list hover">
+                    <li class="list__wrapper"><a href="#" title="studio" class="list__link">Студия</a></li>
+                    <li class="list__wrapper"><a href="./partfolio.html" title="partfolio"
+                            class="list__link">Портфолио</a></li>
+                    <li class="list__wrapper"><a href="#adress" class="list__link">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="nav__contact">
-                <li><a href="#" class="list__link mail">info@devstudio.com</a></li>
-                <li><a href="#" class="list__link link-phone">+38 096 111 11 11</a></li>
+                <li class="list__link mail">info@devstudio.com</li>
+                <li class="list__link link-phone">+38 096 111 11 11</li>
             </ul>
         </div>
     </header>
@@ -39,47 +40,52 @@
             <h1>Эффективные решения<br />для вашего бизнеса</h1>
             <button type="button" class="effect__button">Заказать услугу</button>
         </section>
-        <section class="description container section">
-            <ul class="wrapper-text">
-                <li class="wrapper-text__item text-content">
-                    <h3 class="text-content__main">Внимание к деталям</h3>
-                    <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                </li>
-                <li class="wrapper-text__item text-content">
-                    <h3 class="text-content__main">Пунктуальность</h3>
-                    <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                </li>
-                <li class="wrapper-text__item text-content">
-                    <h3 class="text-content__main">Планирование</h3>
-                    <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                </li>
-                <li class="wrapper-text__item text-content">
-                    <h3 class="text-content__main">Современные технологии</h3>
-                    <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                </li>
-            </ul>
+        <section class="description section">
+            <div class="container">
+                <ul class="wrapper-text">
+                    <li class="wrapper-text__item text-content">
+                        <h3 class="text-content__main">Внимание к деталям</h3>
+                        <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    </li>
+                    <li class="wrapper-text__item text-content">
+                        <h3 class="text-content__main">Пунктуальность</h3>
+                        <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                    </li>
+                    <li class="wrapper-text__item text-content">
+                        <h3 class="text-content__main">Планирование</h3>
+                        <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                    </li>
+                    <li class="wrapper-text__item text-content">
+                        <h3 class="text-content__main">Современные технологии</h3>
+                        <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section class="doing container">
-            <h2 class="question">Чем мы занимаемся</h2>
-            <ul class="qs-box">
-                <li>
-                    <img src="./images/question/01_question.jpg" width="370" height="294"
-                        alt="Написание кода ночью на планшете">
-                </li>
-                <li>
-                    <img src="./images/question/02_question.jpg" width="370" height="294"
-                        alt="Тестирование адаптивной вёрстки">
-                </li>
-                <li>
-                    <img src="./images/question/03_question.jpg" width="370" height="294" alt="Подбор цвета на палитре">
-                </li>
-            </ul>
+        <section class="doing">
+            <div class="container">
+                <h2 class="question">Чем мы занимаемся</h2>
+                <ul class="qs-box">
+                    <li>
+                        <img src="./images/question/01_question.jpg" width="370" height="294"
+                            alt="Написание кода ночью на планшете">
+                    </li>
+                    <li>
+                        <img src="./images/question/02_question.jpg" width="370" height="294"
+                            alt="Тестирование адаптивной вёрстки">
+                    </li>
+                    <li>
+                        <img src="./images/question/03_question.jpg" width="370" height="294"
+                            alt="Подбор цвета на палитре">
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="team section">
             <div class="team__wrapper container">
                 <h2 class="question">Наша команда</h2>
                 <ul class="qs-box">
-                    <li class="qs-box__item">
+                    <li class="qs-box__item imgcard">
                         <img src="./images/team/01_team.jpg" width="270" height="260" alt="Игорь Демьяненко">
                         <h3 class="qs-box__txh2">Игорь Демьяненко</h3>
                         <p class="qs-box__txp">Product Designer</p>
@@ -104,7 +110,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__wrapper container">
+        <div class="container">
             <a class="header__logo logo">
                 <p class="logo__text flogo">Web<span>Studio</span></p>
             </a>
