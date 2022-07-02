@@ -401,16 +401,12 @@ address {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 30px 15px;
+    gap: 30px;
 }
 
 .gallery__wrapper {
-    flex: 0 0 33.3%;
-    height: 50px;
-    margin-left: 15px;
     background-color: var(--white-background-clr);
     max-width: 370px;
-    height: 404px;
     position: relative;
     border-bottom: 1px solid var(--border-color-solid);
 }
@@ -421,7 +417,7 @@ address {
     top: 294px;
     left: 0px;
     width: 0.7px;
-    height: 110px;
+    height: 108px;
     background-color: rgba(128, 128, 128, 0.103);
 }
 
@@ -431,7 +427,7 @@ address {
     top: 294px;
     left: 369px;
     width: 0.7px;
-    height: 110px;
+    height: 108px;
     background-color: rgba(128, 128, 128, 0.103);
 }
 
@@ -445,7 +441,7 @@ address {
 }
 
 .card__txt {
-    margin: 4px 0 0 23.5px;
+    margin: 4px 0 17px 23px;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
